@@ -1,3 +1,12 @@
+/* Globabl Styles */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: montserrat;
+}
+
 /* Navigation Bar Styles */
 
 nav {
@@ -6,19 +15,65 @@ nav {
 
 #navbar {
     position: fixed;
-    width: 250px;
+    width: 280px;
     height: 100%;
     top: 0px;
     left: 0px;
+    border-right: 2px solid black;
 }
 
-#navbar a{
+nav header {
+    text-align: center;
+    margin: 10px;
+}
+
+#navbar ul {
+    padding: 0;
+    margin: 0;
+}
+
+#navbar li a{
     display: block;
+    height: 60px;
+    width: 100%;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+#navbar a:link, #navbar a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+#navbar a:visited:hover, #navbar a:link:hover{
+    color: white;
+}
+
+#navbar li {
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
+    border-bottom: solid 1px black;
+}
+
+#navbar li:hover {
+    background-color: darkgrey;
+    color: white;
+}
+
+#navbar li:first-of-type{
+    border-top: solid 1px black;
 }
 
 /* Main/Body Styles */
 
 #main-doc{
-    margin-left: 260px;
+    margin-left: 290px;
     padding: 10px;
+}
+
+header {
+    font-size: 2rem;
 }
